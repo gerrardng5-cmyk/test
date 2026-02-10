@@ -6,7 +6,7 @@ List<Customer> customers = new List<Customer>();
 List<Order> allOrders = new List<Order>();
 Stack<Order> refundStack = new Stack<Order>();
 
-//nig
+
 
 Startup();
 RunMainMenu();
@@ -25,7 +25,7 @@ void Startup()
     Console.WriteLine($"{customers.Count} customers loaded!");
     Console.WriteLine($"{allOrders.Count} orders loaded!\n");
 }
-
+//Feature 1 and 2
 void LoadCustomers(string v)
 {
     // Use the parameter 'v' instead of a hardcoded string to be more flexible
@@ -143,7 +143,7 @@ void RunMainMenu()
         }
     }
 }
-// Testing
+//Feature 3
 void ListRestaurants()
 {
     foreach (var r in restaurants)
@@ -156,7 +156,7 @@ void ListRestaurants()
     }
 }
 
-//push and pull 
+//Feature 4
 void ListAllOrders()
 {
     Console.WriteLine("\nAll Orders");
